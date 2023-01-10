@@ -4,3 +4,7 @@
 Tech:
 * React
 * Framer-Motion
+
+Demo
+
+![dices](https://user-images.githubusercontent.com/104712880/211609838-09a0021d-4f54-4cb6-8436-859705913570.gif)
