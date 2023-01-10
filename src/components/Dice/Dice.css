@@ -1,0 +1,85 @@
+#dices{
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    color: #8ee4af;
+    background-color: #05386b;
+    display: grid;
+    place-content: center;
+    font-size: 50px;
+    box-shadow: 5px 10px 10px rgb(29, 65, 47);
+    margin-bottom: 10px;
+}
+
+#dice{
+    display: grid;
+    place-items: center;
+}
+
+#score{
+    
+    flex: 0.6;
+    border-radius: 10px;
+    background-color: #8ee4af;
+    display: grid;
+    place-items: center;
+    box-shadow: 2px 5px 5px black;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#overall-score{
+    flex: 0.4;
+    border-radius: 10px;
+    background-color: #8ee4af;
+    display: grid;
+    place-items: center;
+    box-shadow: 2px 5px 5px black;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+#dice>button:hover{
+    cursor: pointer;
+}
+
+#details{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 600;
+}
+#details>small{
+    color: rgb(34, 130, 82);
+}
+
+#roll{
+    background-color: #8ee4af;
+    border: 2px solid #05386b;
+    font-family: 'Sofia Sans', sans-serif;
+    color: #2c3531;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+#quit{
+    background-color: #c3073f;
+    border: 2px solid #05386b;
+    font-family: 'Sofia Sans', sans-serif;
+    color: #000000;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+#continue{
+    background-color: #45a29e;
+    border: 2px solid #05386b;
+    font-family: 'Sofia Sans', sans-serif;
+    color: #000000;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 600;
+}

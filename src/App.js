@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {  useState } from 'react'
+import Dice from './components/Dice/Dice';
+import Home from './components/Home/Home';
 
 function App() {
+  const [playerDetails, setPlayerDetails]= useState(null) // Stores the player details
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Conditionally rendering the components. If playerDetails is null we render 'Home' else we render 'Dice' */}
+      {playerDetails? <Dice playerDetails={playerDetails}/> 
+      : <Home setPlayerDetails={setPlayerDetails} playerDetails={playerDetails}/>}
     </div>
   );
 }
